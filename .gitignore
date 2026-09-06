@@ -1,0 +1,20 @@
+# NetBeans
+/nbproject/private/
+/build/
+/dist/
+/.nb-gradle/
+
+# Java
+*.class
+target/
+
+# Documentos
+*.pdf
+
+# IDE
+.idea/
+*.iml
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
