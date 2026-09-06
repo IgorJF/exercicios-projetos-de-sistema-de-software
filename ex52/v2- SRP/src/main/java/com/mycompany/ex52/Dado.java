@@ -12,36 +12,14 @@ import java.util.Map;
  */
 public class Dado {
     private List<Double> numeros;
-    private Map<Integer, Double> resultadosOperacoes;
+    private Resultado resultado;
     
-    public Dado(){
-        this.numeros = new ArrayList<>();
-        this.resultadosOperacoes = new HashMap<>();
-    }
-
     public Dado(List<Double> numeros) {
         this.numeros = numeros;
-        resultadosOperacoes = new HashMap<>();
+        resultado = new Resultado();
     }
     
     public List<Double> getNumeros(){
         return numeros;
-    }
-
-    public Map<Integer, Double> getResultadosOperacoes() {
-        return resultadosOperacoes;
-    }
-    
-    public void adicionaResultado(int operacao, double resultado){
-        resultadosOperacoes.put(operacao, resultado);
-    }
-    
-    public double getResultadoEscolhido(int codigo) {
-        if(resultadosOperacoes.containsKey(codigo)){
-            return resultadosOperacoes.get(codigo);
-        }
-        return 0;
-    }
-    
-    
+    }  
 }

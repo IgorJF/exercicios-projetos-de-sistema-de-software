@@ -18,10 +18,11 @@ public class Ex52 {
             new CalcularDesvioPadrao()
         );
         Dado listaDados = new Dado(listaNumeros);
+        Resultado listaResultados = new Resultado();
         
-        CalculadoraEstatistica calculadora = new CalculadoraEstatistica(listaDeOperacoes);
-        calculadora.calcularResultados(listaDados.getNumeros());
+        CalculadoraEstatistica calculadora = new CalculadoraEstatistica(listaDeOperacoes, listaResultados);
+        calculadora.calcularResultados(listaDados);
         
-        System.out.println(listaDados.getResultadoEscolhido(0));
+        System.out.println(listaResultados.getResultadoEscolhido(1));
     }
 }
